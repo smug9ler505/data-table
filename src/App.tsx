@@ -23,7 +23,7 @@ function App() {
     pagination: true,
     paginationRowsPerPageOptions: [10, 50, 100, 200, 500],
     fixedHeader: true,
-    title: 'Title',
+    title: 'Users',
 
   }
 
