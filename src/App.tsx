@@ -24,13 +24,15 @@ function App() {
     paginationRowsPerPageOptions: [10, 50, 100, 200, 500],
     fixedHeader: true,
     title: 'Title',
-    
+
   }
 
   return (
-    <Table
-      {...props}
-    />
+    <div>
+      <Table
+        {...props}
+      />
+    </div>
   )
 
 
@@ -54,6 +56,8 @@ const columns: TableColumn<Data>[] = [
   {
     name: 'Address',
     selector: row => row.address,
+    width: '400px'
+
   },
   {
     name: 'Phone',
@@ -63,7 +67,7 @@ const columns: TableColumn<Data>[] = [
   {
     name: 'Content',
     selector: row => row.content,
-    
+
   },
   {
     name: 'Status',
