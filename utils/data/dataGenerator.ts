@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 
 
-function generateData(): Data[] {
+function generateData() {
   const data = [];
 
   for (let i = 1; i <= 500; i++) {
@@ -15,7 +15,7 @@ function generateData(): Data[] {
       status: faker.datatype.boolean()
     });
   }
-  return data;
+  return JSON.stringify(data);
 }
 
 export {generateData};

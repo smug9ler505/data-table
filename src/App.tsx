@@ -9,10 +9,10 @@ function App() {
   const [data, setData] = useState<Data[]>([])
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 500))
-      const data = generateData()
+      await new Promise(res => setTimeout(res, 0))
+      const dataJson = generateData();
+      const data = JSON.parse(dataJson)
       setData(data)
-
     }
     fetchData()
   }, [])
